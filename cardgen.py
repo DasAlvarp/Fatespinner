@@ -33,7 +33,7 @@ def draw_card( name, cost, value, effect, rotation):
 
 
 with open('cards.csv', newline='') as csvfile:
-    for row in csv.reader(csvfile, delimiter=',', quotechar='|'):
+    for row in csv.reader(csvfile, delimiter=';', quotechar='|'):
         draw_card(row[0], row[1], row[2], row[4], row[3])
 
 #draw_card("Lockdown", 6, 6, "Once the second lockdown is played, every other player gets one more turn.", 1)
