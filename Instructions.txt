@@ -1,0 +1,8 @@
+Setup:
+At the start of the game, shuffle the deck and deal each player 5 cards. Choose the proper divider. Each player gets their own segment of the spinner. (add divider page, and show diagram with each player number)
+
+Turns:
+At the start of your turn, draw a card. You can play one card on any tower you control. Cards can only be played above blank towers or towers with a lower cost than the card. Follow any instructions on the card, then rotate the board the amount of clicks in the direction specified. The next player clockwise then starts their turn.
+
+The end of the game:
+When the game ends, whether it's the second lockdown, or a player being unable to play on their side of the board, the game is "locked down." Every player, except for the one that caused the game to end, gets another turn.
