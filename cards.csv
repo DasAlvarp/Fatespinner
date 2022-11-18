@@ -10,7 +10,7 @@ Body Swap;5;3;4;Trade hands with another player
 MindConnect;1;2;3;Each player takes a random card from the player to their left, starting from the caster.
 Hard Times;4;3;2;Each player shuffles one card back into the deck
 Miscount;1;2;2;Play a second card this turn
-Reverse;3;3;0;Switch the order of turns
+Reverse;3;3;0;Reverse the current order of turns
 Deluge;5;2;1;You can play any amount of cards this turn
 Brainbash;2;1;1;Pick two opponents who must swap hands
 Demolition;4;1;0;Reshuffle target tower
@@ -19,6 +19,7 @@ Nonlinear Thinking;2;3;2;For the next round, all spins are reversed
 Chaos;3;1;0;For the next round, all spins are doubled
 Secret Base;1;3;1;You can play an additional card anywhere on the board this turn.
 Blinding Light;2;7;3;All other players draw a  card
-Reorganization;4;2;0;Reorder all towers
+Reorganization;4;2;0;Switch all towers in your zone
 Study;3;2;2;Draw a card
 Echo;3;3;X;Echo's spin is equal to the cost of the card below it.
+Prophecy;4;0;1;Look at the top 4 cards of the deck, and put them back in any order
