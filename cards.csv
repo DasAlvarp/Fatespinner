@@ -21,7 +21,7 @@ Eyesore;5;12;2;Adjacent towers subtract from player scores, rather than add.
 Nonlinear Thinking;2;6;2;For the next round, all spins are reversed
 Chaos;3;2;0;For the next round, all spins are doubled
 Secret Base;1;6;1;You can play an additional card anywhere on the board this turn.
-Blinding Light;7;14;3;All other players draw a  card
+Blinding Light;1;14;3;All other players draw a card
 Reorganization;4;4;0;Switch all towers in your zone
 Study;2;4;2;Draw a card
 Echo;4;6;X;Echo's spin is equal to the cost of the card below it.

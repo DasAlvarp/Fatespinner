@@ -1,7 +1,16 @@
 from PIL import Image, ImageDraw, ImageFont
 import csv
+import shutil
+import os
 
 isStarEnabled = True
+
+def save_with_name(name, direction, backgroundImage, number = 1):
+    defaultFileName = "outcards/" + name.replace(" ", "") + direction + str(number) + ".png"
+    if (os.path.exists(defaultFileName)):
+        save_with_name(name, direction, backgroundImage, number + 1)
+    else:
+        backgroundImage.save(defaultFileName)
 
 def get_wrapped_text(text: str, font: ImageFont.ImageFont,
                      line_length: int):
@@ -32,8 +41,12 @@ def draw_card( name, cost, value, effect, rotation):
         effectText = get_wrapped_text(effect, font, 80)
         draw.multiline_text((53,53),effectText, fill="black")
         backgroundImage.paste(arrow, (85, 155))
-        backgroundImage.save("outcards/" + name.replace(" ", "") + direction + ".png")
+        save_with_name(name, direction, backgroundImage)
 
+try:
+    shutil.rmtree("outcards/")
+finally:
+    os.mkdir("outcards")
 
 with open('cards.csv', newline='') as csvfile:
     for row in csv.reader(csvfile, delimiter=';', quotechar='|'):
