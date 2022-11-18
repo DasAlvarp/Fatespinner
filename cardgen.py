@@ -1,6 +1,8 @@
 from PIL import Image, ImageDraw, ImageFont
 import csv
 
+isStarEnabled = True
+
 def get_wrapped_text(text: str, font: ImageFont.ImageFont,
                      line_length: int):
         lines = ['']
@@ -21,7 +23,8 @@ def draw_card( name, cost, value, effect, rotation):
         draw.text((53, 32), name, font=font)
         font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=25)
         draw.text((25, 25), str(cost), font=font, fill="black")
-        draw.text((25, 150), str(value), font=font, fill="black")
+        if isStarEnabled:
+            draw.text((25, 150), str(value), font=font, fill="black")
         draw.text((110, 150), str(rotation), font=font, fill="black")
         
         font = ImageFont.truetype("fonts/Roboto-Thin.ttf", size=12)
