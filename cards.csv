@@ -1,25 +1,25 @@
 Lockdown;6;6;1;Once the second lockdown is played, every other player gets one more turn
 Thief;4;2;1;Switch this stack of cards with the opposite one
-Double Up;2;X;2;This card's value is worth twice the card below it
+Double Up;4;X;2;This card's value is worth twice the card below it
 Pushover;7;2;1;Any card can be played over this one
-Reload;2;1;1;Reshuffle your hand
-Freeze;2;4;3;The board cannot be spun until the next round
+Reload;1;1;1;Reshuffle your hand
+Freeze;1;4;3;The board cannot be spun until the next round
 Tithing;3;2;2;Reshuffle any card on the board back into the deck.
 Pickpocket;3;1;1;Trade a card in your hand for a random card in an opponent's hand
-Body Swap;5;3;4;Trade hands with another player
+Body Swap;2;3;4;Trade hands with another player
 MindConnect;1;2;3;Each player takes a random card from the player to their left, starting from the caster.
 Hard Times;4;3;2;Each player shuffles one card back into the deck
 Miscount;1;2;2;Play a second card this turn
 Reverse;3;3;0;Reverse the current order of turns
 Deluge;5;2;1;You can play any amount of cards this turn
-Brainbash;2;1;1;Pick two opponents who must swap hands
-Demolition;4;1;0;Reshuffle target tower
+Brainbash;2;1;1;Pick two players who must swap hands
+Demolition;1;1;2;Reshuffle target tower
 Eyesore;5;6;2;Adjacent towers subtract from player scores, rather than add.
 Nonlinear Thinking;2;3;2;For the next round, all spins are reversed
 Chaos;3;1;0;For the next round, all spins are doubled
 Secret Base;1;3;1;You can play an additional card anywhere on the board this turn.
-Blinding Light;2;7;3;All other players draw a  card
+Blinding Light;7;7;3;All other players draw a  card
 Reorganization;4;2;0;Switch all towers in your zone
-Study;3;2;2;Draw a card
-Echo;3;3;X;Echo's spin is equal to the cost of the card below it.
-Prophecy;4;0;1;Look at the top 4 cards of the deck, and put them back in any order
+Study;2;2;2;Draw a card
+Echo;4;3;X;Echo's spin is equal to the cost of the card below it.
+Prophecy;4;0;2;Look at the top 4 cards of the deck, and put them back in any order
