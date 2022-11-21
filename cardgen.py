@@ -10,7 +10,8 @@ def save_with_name(name, direction, backgroundImage, number = 1):
     if (os.path.exists(defaultFileName)):
         save_with_name(name, direction, backgroundImage, number + 1)
     else:
-        backgroundImage.save(defaultFileName)
+        backgroundImage = backgroundImage.convert('RGB')
+        backgroundImage.save(defaultFileName, format="PNG")
 
 def get_wrapped_text(text: str, font: ImageFont.ImageFont,
                      line_length: int):
@@ -25,23 +26,40 @@ def get_wrapped_text(text: str, font: ImageFont.ImageFont,
 
 def draw_card( name, cost, value, effect, rotation):
     for direction in "LR":
-        backgroundImage = Image.open('resources/genericCard.png')
-        arrow = Image.open("resources/" + direction + "arrow.png")
-        draw = ImageDraw.Draw(backgroundImage)
-        font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=15)
-        draw.text((53, 32), name, font=font)
-        font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=25)
-        draw.text((25, 25), str(cost), font=font, fill="black")
+        finalImage = Image.new("RGB", (600, 825), color=0)
+        back = Image.open('resources/genericCard.png')
+        
+        finalImage.paste(back)
+
+        draw = ImageDraw.Draw(finalImage)
+
+        #title text
+        font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=50)
+        draw.text((250, 120), name, font=font)
+
+        # cost text
+        font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=110)
+        draw.text((100, 100), str(cost), font=font, fill=0)
         if isStarEnabled:
-            draw.text((25, 150), str(value), font=font, fill="black")
-        draw.text((110, 150), str(rotation), font=font, fill="black")
+            draw.text((130, 680), str(value), font=font, fill=0, anchor="mm")
+        draw.text((450, 630), str(rotation), font=font, fill=0)
         
-        font = ImageFont.truetype("fonts/Roboto-Thin.ttf", size=12)
+        font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=50)
         
-        effectText = get_wrapped_text(effect, font, 80)
-        draw.multiline_text((53,53),effectText, fill="black")
-        backgroundImage.paste(arrow, (85, 155))
-        save_with_name(name, direction, backgroundImage)
+        effectText = get_wrapped_text(effect, font, 350)
+        draw.multiline_text((210,220),effectText, fill=0, font=font)
+
+
+        arrow = Image.open("resources/" + direction + "arrow.png")
+        if arrow.mode == 'RGBA':
+            alpha = arrow.split()[3]
+            bgmask = alpha.point(lambda x: 255-x)
+            arrow = arrow.convert('RGB')
+            arrow.paste((255,255,255), None, bgmask)
+
+        arrow = arrow.resize((100, 110))
+        finalImage.paste(arrow, (350, 630))
+        save_with_name(name, direction, finalImage)
 
 try:
     shutil.rmtree("outcards/")
