@@ -34,7 +34,12 @@ def draw_card( name, cost, value, effect, rotation):
         draw = ImageDraw.Draw(finalImage)
 
         #title text
+        titleFontSize= 50
         font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=50)
+        while (font.getlength(name) > 600):
+            titleFontSize -= 1
+            font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=titleFontSize)
+            
         draw.text((250, 120), name, font=font)
 
         # cost text
