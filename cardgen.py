@@ -47,7 +47,6 @@ def draw_card( name, cost, value, effect, rotation):
         draw.text((100, 100), str(cost), font=font, fill=0)
         if isStarEnabled:
             draw.text((130, 680), str(value), font=font, fill=0, anchor="mm")
-        draw.text((450, 630), str(rotation), font=font, fill=0)
         
         font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=50)
         
@@ -62,8 +61,11 @@ def draw_card( name, cost, value, effect, rotation):
             arrow = arrow.convert('RGB')
             arrow.paste((255,255,255), None, bgmask)
 
-        arrow = arrow.resize((100, 110))
-        finalImage.paste(arrow, (350, 630))
+        arrow = arrow.resize((160, 176))
+        finalImage.paste(arrow, (400, 600))
+        #Rotation text
+        font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=110)
+        draw.text((450, 600), str(rotation), font=font, fill=0)
         save_with_name(name, direction, finalImage)
 
 try:
