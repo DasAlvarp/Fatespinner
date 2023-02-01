@@ -16,17 +16,17 @@ Miscount;1;4;2;Play a second card this turn
 Reverse;3;6;0;Reverse the current order of turns
 Deluge;5;4;1;You can play 4 additional cards this turn
 Brainbash;2;2;1;Pick two players who must swap hands
-Demolition;1;2;2;Reshuffle target tower
-Eyesore;5;12;2;Adjacent towers subtract from player scores, rather than add
+Demolition;1;2;2;Reshuffle target slot
+Eyesore;5;12;2;Adjacent slots subtract from player scores, rather than add
 Nonlinear Thinking;2;6;2;For the next round, all spins are reversed
 Chaos;3;2;0;For the next round, all spins are doubled
 Secret Base;1;6;1;You can play an additional card anywhere on the board this turn
 Blinding Light;1;14;3;All other players draw a card
-Reorganization;4;4;0;Switch all towers in your zone
+Reorganization;4;4;0;Switch all slots in your zone
 Study;2;4;2;Draw a card
 Echo;4;6;X;Echo's spin is equal to the cost of the card below it.
 Prophecy;4;0;2;Look at the top 4 cards of the deck, and put them back in any order
-Dark Mirror;3;8;2;The tower across from Dark Mirror subtracts from player scores
-Magnification;1;2;3;Adjacent towers double for player scores
+Dark Mirror;3;8;2;The slot across from Dark Mirror subtracts from player scores
+Magnification;1;2;3;Adjacent slots double for player scores
 Reset;4;4;2;Each player shuffles their hand back into the deck and redraws 5 cards
-Open Source;1;6;1;Draw two cards. For the next round, each player draws 1 additional card at the start of their turn
+Open Source;1;6;1;Draw two cards. Every other player draws a card.
