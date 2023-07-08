@@ -1,32 +1,32 @@
-Lockdown;6;12;1;Once there are as many lockdowns on the board as players, the game enters the lockdown phase
-Lockdown;6;12;2;Once there are as many lockdowns on the board as players, the game enters the lockdown phase
-Lockdown;6;12;1;Once there are as many lockdowns on the board as players, the game enters the lockdown phase
-Lockdown;6;12;2;Once there are as many lockdowns on the board as players, the game enters the lockdown phase
-Thief;3;4;1;Switch this stack of cards with the opposite one
-Double Up;4;X;2;This card's value is worth twice the card below it
-Pushover;7;4;1;Any card can be played over this one
+Lockdown;3;12;1;Once there are as many lockdowns on the board as players, the game enters the lockdown phase
+Lockdown;3;12;2;Once there are as many lockdowns on the board as players, the game enters the lockdown phase
+Lockdown;3;12;1;Once there are as many lockdowns on the board as players, the game enters the lockdown phase
+Lockdown;3;12;2;Once there are as many lockdowns on the board as players, the game enters the lockdown phase
+Thief;1;4;1;Switch this stack of cards with the opposite one
+Double Up;2;X;2;This card's value is worth twice the card below it
+Pushover;3;4;1;Any card can be played over this one
 Reload;1;2;1;Reshuffle your hand and draw 5 cards
 Freeze;1;8;3;The board cannot be spun until the next round
-Tithing;3;4;2;Reshuffle any card on the board back into the deck
-Pickpocket;3;2;1;Trade a card in your hand for a random card in an opponent's hand
-Body Swap;2;6;4;Trade hands with another player
-MindConnect;1;4;3;Each player takes a random card from the player to their left, starting from the caster
-Hard Times;4;6;2;Each player shuffles one card back into the deck
+Tithing;2;4;2;Reshuffle any card on the board back into the deck
+Pickpocket;2;2;1;Trade a card in your hand for a random card in an opponent's hand
+Body Swap;1;6;4;Trade hands with another player
+MindConnect;2;4;3;Each player takes a random card from the player to their left, starting from the caster
+Hard Times;2;6;2;Each player shuffles one card back into the deck
 Miscount;1;4;2;Play a second card this turn
-Reverse;3;6;0;Reverse the current order of turns
-Deluge;5;4;1;You can play 4 additional cards this turn
-Brainbash;2;2;1;Pick two players who must swap hands
+Reverse;2;6;0;Reverse the current order of turns
+Deluge;3;4;1;You can play 4 additional cards this turn
+Brainbash;1;2;1;Pick two players who must swap hands
 Demolition;1;2;2;Reshuffle target slot
-Eyesore;5;12;2;Adjacent slots subtract from player scores, rather than add
-Nonlinear Thinking;2;6;2;For the next round, all spins are reversed
-Chaos;3;2;0;For the next round, all spins are doubled
+Eyesore;3;12;2;Adjacent slots subtract from player scores, rather than add
+Nonlinear Thinking;1;6;2;For the next round, all spins are reversed
+Chaos;2;2;0;For the next round, all spins are doubled
 Secret Base;1;6;1;You can play an additional card anywhere on the board this turn
 Blinding Light;1;14;3;All other players draw a card
-Reorganization;4;4;0;Switch all slots in your zone
-Study;2;4;2;Draw a card
-Echo;4;6;X;Echo's spin is equal to the cost of the card below it.
-Prophecy;4;0;2;Look at the top 4 cards of the deck, and put them back in any order
-Dark Mirror;3;8;2;The slot across from Dark Mirror subtracts from player scores
+Reorganization;1;4;0;Switch all slots in your zone
+Study;1;4;2;Draw a card
+Echo;2;6;X;Echo's spin is equal to the cost of the card below it.
+Prophecy;2;0;2;Look at the top 4 cards of the deck, and put them back in any order
+Dark Mirror;2;8;2;The slot across from Dark Mirror subtracts from player scores
 Magnification;1;2;3;Adjacent slots double for player scores
-Reset;4;4;2;Each player shuffles their hand back into the deck and redraws 5 cards
+Reset;2;4;2;Each player shuffles their hand back into the deck and redraws 5 cards
 Open Source;1;6;1;Draw two cards. Every other player draws a card.
