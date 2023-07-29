@@ -8,8 +8,9 @@ class ResourceType (Enum):
     NUMBERS = 1
     RPS = 2
     ONION = 3
+    COLORS = 4
 
-currentResource = ResourceType.ONION 
+currentResource = ResourceType.COLORS
 
 isStarEnabled = True
 
@@ -44,6 +45,17 @@ def GetRPS(costString):
         return None
     return image
 
+def GetResourceColor(costString):
+    cost = int(costString)
+    if cost == 1:
+        return 'purple'
+    elif cost == 2:
+        return 'green'
+    elif cost == 3:
+        return 'orange'
+    else:
+        return None
+
     
 def draw_card( name, cost, value, effect, rotation):
     for direction in "LR":
@@ -61,7 +73,7 @@ def draw_card( name, cost, value, effect, rotation):
             titleFontSize -= 1
             font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=titleFontSize)
             
-        draw.text((250, 120), name, font=font)
+        draw.text((250, 120), ''.join([i for i in name if not i.isdigit()]), font=font)
 
         # cost text
         if currentResource == ResourceType.NUMBERS:
@@ -75,7 +87,10 @@ def draw_card( name, cost, value, effect, rotation):
             image = Image.open('resources/Onion' + cost + ".png")
             image = image.resize((160, 160))
             finalImage.paste(image, (60, 90), mask=image)
-
+        elif currentResource == ResourceType.COLORS:
+            color = GetResourceColor(cost)
+            image = ImageDraw.Draw(finalImage)
+            image.rectangle([(88, 117), (188, 217)], fill = color, outline = 'black')
 
         if isStarEnabled:
             draw.text((130, 680), str(value), font=font, fill=0, anchor="mm")
@@ -108,9 +123,13 @@ finally:
 with open('cards.csv', newline='') as csvfile:
     for row in csv.reader(csvfile, delimiter=';', quotechar='|'):
         if currentResource == ResourceType.RPS:
-            draw_card(row[0] + 'R', 1, row[2], row[4], row[3])
-            draw_card(row[0] + "P", 2, row[2], row[4], row[3])
-            draw_card(row[0] + "S", 3, row[2], row[4], row[3])
+            draw_card(row[0] + '1', 1, row[2], row[4], row[3])
+            draw_card(row[0] + "2", 2, row[2], row[4], row[3])
+            draw_card(row[0] + "3", 3, row[2], row[4], row[3])
+        if currentResource == ResourceType.COLORS:
+            draw_card(row[0] + '1', 1, row[2], row[4], row[3])
+            draw_card(row[0] + "2", 2, row[2], row[4], row[3])
+            draw_card(row[0] + "3", 3, row[2], row[4], row[3])
         else:
             draw_card(row[0], row[1], row[2], row[4], row[3])
 
