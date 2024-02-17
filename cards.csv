@@ -16,7 +16,7 @@ Miscount;1;4;2;Play a second card this turn
 Reverse;2;6;0;Reverse the current order of turns
 Deluge;3;4;1;You can play 4 additional cards this turn
 Brainbash;1;2;1;Pick two players who must swap hands
-Demolition;1;2;2;Reshuffle target slot
+Demolition;1;2;2;Reshuffle target slot into deck
 Eyesore;3;12;2;Adjacent slots subtract from player scores, rather than add
 Nonlinear Thinking;1;6;2;For the next round, all spins are reversed
 Chaos;2;2;0;For the next round, all spins are doubled
@@ -24,7 +24,6 @@ Secret Base;1;6;1;You can play an additional card anywhere on the board this tur
 Blinding Light;1;14;3;All other players draw a card
 Reorganization;1;4;0;Switch all slots in your zone
 Study;1;4;2;Draw a card
-Echo;2;6;X;Echo's spin is equal to the cost of the card below it.
 Prophecy;2;0;2;Look at the top 4 cards of the deck, and put them back in any order
 Dark Mirror;2;8;2;The slot across from Dark Mirror subtracts from player scores
 Magnification;1;2;3;Adjacent slots double for player scores

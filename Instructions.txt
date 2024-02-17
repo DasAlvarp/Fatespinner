@@ -14,3 +14,15 @@ Other things to add:
 - Anatomy of a card
 - Weird situations that come up. 
 - If a card has you redraw your hand, redraw 5 cards.
+
+
+
+Todo: clarify target
+what you're playing vs anywhere on the board
+rd vs turn (inclusive/exclusive)
+Lockdown removal?
+Make lockdown not have movement
+Change shape
+
+design a straigtforward path to victory
+blank cards?
