@@ -22,7 +22,7 @@ def save_with_name(name, direction, backgroundImage, number = 1):
     else:
         backgroundImage = backgroundImage.convert('RGB')
         # Uncomment this if doing rapid prototyping
-        # backgroundImage = backgroundImage.resize((104, 143))
+        backgroundImage = backgroundImage.resize((144, 198))
         backgroundImage.save(defaultFileName, format="PNG")
 
 def get_wrapped_text(text: str, font: ImageFont.ImageFont,
