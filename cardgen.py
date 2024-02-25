@@ -22,7 +22,7 @@ def save_with_name(name, direction, backgroundImage, number = 1):
     else:
         backgroundImage = backgroundImage.convert('RGB')
         # Uncomment this if doing rapid prototyping
-        backgroundImage = backgroundImage.resize((144, 198))
+        #backgroundImage = backgroundImage.resize((144, 198))
         backgroundImage.save(defaultFileName, format="PNG")
 
 def get_wrapped_text(text: str, font: ImageFont.ImageFont,
@@ -80,12 +80,12 @@ def draw_card(name, cost, value, effect, rotation):
 
             #title text
             titleFontSize= 50
-            font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=50)
-            while (font.getlength(name) > 600):
+            font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=titleFontSize)
+            while (font.getlength(name) > 320):
                 titleFontSize -= 1
                 font = ImageFont.truetype("fonts/Roboto-Bold.ttf", size=titleFontSize)
-                
-            draw.text((250, 120), ''.join([i for i in name if not i.isdigit()]), font=font)
+
+            draw.text((250, 130 + (50 - titleFontSize)), ''.join([i for i in name if not i.isdigit()]), font=font)
             colorVal = ""
             # cost text
             if currentResource == ResourceType.NUMBERS:

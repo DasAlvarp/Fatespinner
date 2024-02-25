@@ -13,7 +13,7 @@ Body Swap;1;10;4;Trade hands with another player
 MindConnect;2;10;3;Each player takes a random card from the player to their left, starting from the caster
 Hard Times;2;15;2;Each player shuffles one card back into the deck
 Miscount;1;10;2;Play a second card this turn
-Reverse;2;15;Reverse the current order of turns
+Reverse;2;15;0;Reverse the current order of turns
 Deluge;3;10;1;You can play 2 additional cards this turn
 Brainbash;1;5;1;Pick two players who must swap hands
 Demolition;1;5;2;Reshuffle target slot into deck
