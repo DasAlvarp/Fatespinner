@@ -1,16 +1,43 @@
 Setup:
-At the start of the game, shuffle the deck and deal each player 5 cards. Choose the proper divider. Place the divider on top of the spinner[reference picture]. Each player gets their own segment of the spinner. (add divider picture, and show diagram with each player number and spinner)
+* shuffle the deck and deal each player 5 cards.
+* Choose the proper divider for the number of players and place the divider on top of the spinner[reference picture]. Each player gets their own segment of the spinner. (add divider picture, and show diagram with each player number and spinner)
+* Spin the board. Whichever player has the red marker in their zone goes first
 
 Turns:
-At the start of your turn, draw a card. You can play one card on any tower in your zone. Cards can only be played on top of blank towers or towers with a lower cost than the card being played. Follow any instructions on the card, then rotate the board the amount of clicks in the direction specified. The next player clockwise then starts their turn.
+* draw a card.
+* play one card on any slot in your zone. Cards can only be played on black slots or stacks that match the color of the card. 
+* Follow any instructions on the card, then rotate the board the amount of clicks in the direction specified by the card. 
+* The next player clockwise then starts their turn (card rules nonwithstanding).
 
-The end of the game:
-When the game ends, whether it's the second lockdown, the deck is emptied, or a player being unable to play in their zone, the board is "locked down." Every player, except for the one that caused the game to end gets another turn. The player with the most victory points in their zone at the end of the game[show diagram of card] 
+Lockdown phase:
+The lockdown phase can be triggered by:
+* The number of lockdowns on the board is equal to the number of players
+* The deck is empty
+* A player is not able to play a card
+
+* Every player, except for the one that caused the game to end gets a final turn, where the board does not spin. 
+* The player with the most victory points on top of the stacks in their zone at the end of the game[show diagram of card].
 
 
 
+Addendum:
+
+Lockdown: If victory points are tied, then total up all victory points in all stacks, instead of just the top.
+For this tiebreak, negative/multipliers apply to whole stacks when calculating totals
 
 Other things to add:
 - Anatomy of a card
 - Weird situations that come up. 
 - If a card has you redraw your hand, redraw 5 cards.
+
+
+
+Todo: clarify target
+what you're playing vs anywhere on the board
+rd vs turn (inclusive/exclusive)
+Lockdown removal?
+Make lockdown not have movement
+Change shape
+
+design a straigtforward path to victory
+blank cards?
